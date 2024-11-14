@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'OpenDyslexic-Bold'; 
+    src: url('fonts/OpenDyslexic-Bold.otf'); 
+}
+
+@font-face {
+    font-family: 'OpenDyslexic-Regular'; 
+    src: url('fonts/OpenDyslexic-Regular.otf'); 
+}
+
+@font-face {
+    font-family: 'CenturyGothic'; 
+    src: url('fonts/CenturyGothic.ttf'); 
+}
+
+@font-face {
+    font-family: 'Chinese'; 
+    src: url('fonts/NotoSans.ttf'); 
+}
+
+
+html {
+    --backgorund-color: #122C6F;
+    --font-color: #EBE3D5;
+    --currentFont: "OpenDyslexic-Regular";
+    --radialButton: #FFB731;
+}
+
+
+.chinese {
+    letter-spacing: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: xx-large;
+}
+
+.current-font {
+    font-family: var(--currentFont);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+.language {
+    float: left;
+}
+
+li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-family: var(--currentFont);
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.text {
+    font-family: var(--currentFont);
+}
+
+p {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    color: var(--font-color);
+}
+
+h1 {
+    color: var(--font-color);
+}
+
+h3 {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: var(--font-color);
+}
+
+.card {
+    /* background-color: var(--backgorund-color); */
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.header {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: xx-large;
+    margin: 0;
+    width: 60%;
+    height: fit-content;
+    text-align: left;
+}
+
+font-icon {
+    color: red;
+}
+
+.buttons {
+    float: right;
+    display: inline;
+}
+
+button {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50rem;
+    border: none;
+    /* border: 0.2rem solid var(--radialButton); */
+    background-color: var(--font-color);
+    margin-right: 0.5rem;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+i {
+    color: var(--backgorund-color);
+}
+
+
+.bi {
+    font-size: 1rem;
+    color: var(--backgorund-color);
+}
+
+
+.font {
+    font-family: var(--currentFont);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10%;
+    margin-top: 5%;
+}
+
+.col1{
+    margin: 0;
+    width: 40%;
+    font-size: small;
+}
+
+.col2 {
+    margin:0;
+    width: 40%;
+    font-size: small;
+}
+
+.girl-img {
+    position: absolute;
+    bottom: 6.5vw;
+    right: 0;
+    /* max-width: 100px;
+    max-height: 120px; */
+}
+
+.girl-img img {
+    transform: scale(0.5);
+    width: 100%;
+    height: auto;
+}
+
+
+
+ 
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  
+  .radio-button {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: var(--font-color);
+    font-weight: 600;
+    cursor: pointer;
+    /* font-family: var(--currentFont); */
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__input:checked + .radio-button__label .radio-button__custom {
+    background-color: var(--radialButton);
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  .radio-button__input:checked + .radio-button__label {
+    color: var(--radialButton);
+  }
+  
+  .radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: var(--radialButton);
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  
+  
+  
+  
+  
