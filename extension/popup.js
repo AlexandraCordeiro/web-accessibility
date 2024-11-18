@@ -41,6 +41,32 @@ async function changeMode() {
     });
 }
 
+function goToLink() {
+    console.log(this.id)
+    let url
+    switch(this.id) {
+        case "pomodoro":
+            url = "https://pomofocus.io/"
+            break
+        case "books":
+            url = "https://www.digitalbook.io/"
+            break
+        case "list":
+            url = "https://tweek.so/"
+            break
+        case "playlist":
+            url = "https://www.youtube.com/@Lullablocks"
+            break
+    }
+    window.open(url, '_blank').focus()
+}
+
+
+document.getElementById('pomodoro').onclick = goToLink;
+document.getElementById('list').onclick = goToLink;
+document.getElementById('books').onclick = goToLink;
+document.getElementById('playlist').onclick = goToLink;
+
 
 (async () => {
     if (!execute) {

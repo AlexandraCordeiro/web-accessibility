@@ -26,6 +26,14 @@ html {
     --radialButton: #FFB731;
 }
 
+img {
+    max-width: 30%;
+    height: fit-content;
+    position: relative;
+    /* left: -5%; */
+    margin: auto;
+}
+
 
 .chinese {
     letter-spacing: 0.5rem;
@@ -152,39 +160,49 @@ i {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 10%;
+    gap: 5%;
     margin-top: 5%;
 }
 
 .col1{
     margin: 0;
-    width: 40%;
+    width: 45%;
     font-size: small;
 }
 
 .col2 {
     margin:0;
-    width: 40%;
+    width: 45%;
     font-size: small;
 }
 
-.girl-img {
-    position: absolute;
-    bottom: 6.5vw;
-    right: 0;
-    /* max-width: 100px;
-    max-height: 120px; */
+@media (max-width: 720px) {
+    .text-container {
+        flex-direction: column;
+    }
+
+    .col1, .col2 {
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    .title {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .buttons {
+        float: left;
+    }
+
+    img {
+        max-width: 80%;
+    }
 }
 
-.girl-img img {
-    transform: scale(0.5);
-    width: 100%;
-    height: auto;
-}
 
 
 
- 
 
 
 
