@@ -19,6 +19,7 @@ function changeLang(lang) {
     switch (lang) {
         case 'en':
             document.documentElement.lang = 'en'
+            document.getElementById('skip').innerText = "skip"
             document.getElementById('title').innerText = 'Middle school student with ADHD and dyslexia'
             document.getElementById('firstParagraph').innerText = `Preety is a middle school student with attention deficit hyperactivity disorder with dyslexia.
             She has difficulty reading, but she enjoys her literature class. Her school started using online textbooks. 
@@ -30,6 +31,7 @@ function changeLang(lang) {
             break
         case 'es':
             document.documentElement.lang = 'es'
+            document.getElementById('skip').innerText = "saltar"
             document.getElementById('title').innerText = 'Estudiante de secundaria con TDAH y dislexia'
             document.getElementById('firstParagraph').innerText = `Preety es una estudiante de secundaria con trastorno por déficit de atención con hiperactividad y dislexia.
             Le cuesta leer, pero disfruta en clase de literatura. Su colegio ha empezado a utilizar libros de texto en línea. 
@@ -42,6 +44,7 @@ function changeLang(lang) {
             
         case 'fr':
             document.documentElement.lang = 'fr'
+            document.getElementById('skip').innerText = "sauter"
             document.getElementById('title').innerText = 'Collégien souffrant de TDAH et de dyslexie'
             document.getElementById('firstParagraph').innerText = `Preety est une collégienne qui souffre d'un trouble déficitaire de l'attention avec hyperactivité et de dyslexie.
             Elle a du mal à lire, mais elle aime son cours de littérature. Son école a commencé à utiliser des manuels en ligne. 
@@ -54,6 +57,7 @@ function changeLang(lang) {
         
         case 'pt':
             document.documentElement.lang = 'fr'
+            document.getElementById('skip').innerText = "saltar"
             document.getElementById('title').innerText = 'Estudante do ensino secundário com PDAH e dislexia'
             document.getElementById('firstParagraph').innerText = `Preety é uma aluna do ensino secundário com perturbação de défice de atenção e hiperatividade e dislexia.
             Tem dificuldade em ler, mas gosta das aulas de literatura. A sua escola começou a utilizar manuais escolares digitais. 
@@ -66,6 +70,7 @@ function changeLang(lang) {
         
         case 'chinese':
             document.documentElement.lang = 'zh-CHS'
+            document.getElementById('skip').innerText = "跳过"
             document.documentElement.style.setProperty("--currentFont", "Chinese")
             document.getElementById('title').className = "title chinese text"
             document.getElementById('firstParagraph').className = "col1 chinese text"
