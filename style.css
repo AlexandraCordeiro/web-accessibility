@@ -20,7 +20,7 @@
 
 
 html {
-    --backgorund-color: #122C6F;
+    --backgorund-color: #1F1E1E;
     --font-color: #EBE3D5;
     --currentFont: "OpenDyslexic-Regular";
     --radialButton: #FFB731;
@@ -34,7 +34,9 @@ img {
     margin: auto;
 }
 
-
+a {
+    text-decoration: none;
+}
 .chinese {
     letter-spacing: 0.5rem;
     padding-bottom: 0.5rem;
@@ -60,7 +62,7 @@ ul {
     float: left;
 }
 
-li a {
+li {
     display: inline;
     color: black;
     text-align: center;
@@ -117,7 +119,7 @@ h3 {
 }
 
 font-icon {
-    color: red;
+    /* color: red; */
 }
 
 .buttons {
@@ -125,7 +127,7 @@ font-icon {
     display: inline;
 }
 
-button {
+.button {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50rem;
@@ -209,6 +211,7 @@ i {
 /* From Uiverse.io by gharsh11032000 */ 
 .radio-button-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 24px;
     margin-left: 1%;

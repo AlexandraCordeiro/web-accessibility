@@ -132,7 +132,7 @@ function changeMode() {
     lightMode = !lightMode
     if (lightMode) {
         console.log('lightMode')
-        fontColor = '#122C6F'
+        fontColor = '#1F1E1E'
         backgroundColor = '#EBE3D5'
         icon = "bi bi-moon"
         radialButton = '#283593'
@@ -140,7 +140,7 @@ function changeMode() {
     else {
         console.log('darkMode')
         fontColor = '#EBE3D5'
-        backgroundColor = '#122C6F'
+        backgroundColor = '#1F1E1E'
         icon = "bi bi-brightness-low-fill"
         radialButton = '#FFB731'
         
