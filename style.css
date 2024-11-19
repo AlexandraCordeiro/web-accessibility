@@ -51,7 +51,6 @@ html {
     padding: 0.3rem;
     box-shadow: 0 0 1rem #4c8bf580;
     transform: scale(1.05);
-    transform: translateX(0.01rem);
     margin-left: 1rem;
 }
 
