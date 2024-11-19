@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #1F1E1E;">
 <head>
-    <link href="#persona-card">
-    <link href="#persona-card-title">
-    <link href="#persona-card-main-text">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Accessible Persona Card</title>
 </head>
-<main>
-    <ul>
-        <!-- choose language -->
-        <li class="language">
-            <form class="radio-button-container">
-                <section class="radio-button">
-                    <input type="radio" class="radio-button__input" id="en" name="radio-group">
-                    <label class="radio-button__label current-font" for="en">
-                        <span class="radio-button__custom"></span>
-                        en
-                    </label>
-                </section>
-                <section class="radio-button">
-                    <input type="radio" class="radio-button__input" id="es" name="radio-group">
-                    <label class="radio-button__label current-font" for="es">
-                        <span class="radio-button__custom"></span>
-                        es
-                    </label>
-                </section>
-                <section class="radio-button">
-                    <input type="radio" class="radio-button__input" id="fr" name="radio-group">
-                    <label class="radio-button__label current-font" for="fr">
-                        <span class="radio-button__custom"></span>
-                        fr
-                    </label>
-                </section>
-                <section class="radio-button">
-                    <input type="radio" class="radio-button__input" id="pt" name="radio-group">
-                    <label class="radio-button__label current-font" for="pt">
-                        <span class="radio-button__custom"></span>
-                        pt
-                    </label>
-                </section>
-                <section class="radio-button">
-                    <input type="radio" class="radio-button__input" id="chinese" name="radio-group">
-                    <label class="radio-button__label current-font" for="chinese">
-                        <span class="radio-button__custom"></span>
-                        文
-                    </label>
-                </section>
-            </form>
-        </li>
+<body>
+    <!-- Skip to Main Content -->
+    
+    
+    <main>
+        <ul>
+            <!-- choose language -->
+            <li class="skip-button">
+                <a href="#main-content" class="skip-link">Skip to Main Content</a>
+            </li>
+            <li class="language">
+                <form class="radio-button-container">
+                    <section class="radio-button">
+                        <input type="radio" class="radio-button__input" id="en" name="radio-group">
+                        <label class="radio-button__label current-font" for="en">
+                            <span class="radio-button__custom"></span>
+                            en
+                        </label>
+                    </section>
+                    <section class="radio-button">
+                        <input type="radio" class="radio-button__input" id="es" name="radio-group">
+                        <label class="radio-button__label current-font" for="es">
+                            <span class="radio-button__custom"></span>
+                            es
+                        </label>
+                    </section>
+                    <section class="radio-button">
+                        <input type="radio" class="radio-button__input" id="fr" name="radio-group">
+                        <label class="radio-button__label current-font" for="fr">
+                            <span class="radio-button__custom"></span>
+                            fr
+                        </label>
+                    </section>
+                    <section class="radio-button">
+                        <input type="radio" class="radio-button__input" id="pt" name="radio-group">
+                        <label class="radio-button__label current-font" for="pt">
+                            <span class="radio-button__custom"></span>
+                            pt
+                        </label>
+                    </section>
+                    <section class="radio-button">
+                        <input type="radio" class="radio-button__input" id="chinese" name="radio-group">
+                        <label class="radio-button__label current-font" for="chinese">
+                            <span class="radio-button__custom"></span>
+                            文
+                        </label>
+                    </section>
+                </form>
+            </li>
 
-        <!-- other options -->
-        <li class="buttons">
-            <button id="fontButton" class="current-font button" onclick="changeFont()">
-                Aa
-            </button>
+            <!-- other options -->
+            <li class="buttons">
+                <button id="fontButton" class="current-font button" onclick="changeFont()">
+                    Aa
+                </button>
 
-            <button onclick="changeMode()" class="button">
-                <i id="modeButton" class="bi bi-brightness-low-fill"></i>
-            </button>
+                <button onclick="changeMode()" class="button">
+                    <i id="modeButton" class="bi bi-brightness-low-fill"></i>
+                </button>
 
-            <button onclick="textToSpeech()" class="button">
-                <i id="speechButton" class="bi bi-soundwave"></i>
-            </button>
-        </li>      
-    </ul>
+                <button onclick="textToSpeech()" class="button">
+                    <i id="speechButton" class="bi bi-soundwave"></i>
+                </button>
+            </li>      
+        </ul>
 
-    <!-- text -->
-    <a href="#persona-card">
-        <section class="card">
-            
-            <a href="#persona-card-title">
-                <section class="header">
-                    <h1 class="title text" id="title">Middle school student with ADHD and dyslexia</h1>
-                </section>
-            </a>
-            
-            <a href="#persona-card-main-text">
-                <section class="text-container">
-                    <p class="col1 text" id="firstParagraph">
-                        Preety is a middle school student with  attention deficit hyperactivity disorder with dyslexia.
-                        She has difficulty reading, but she enjoys   her literature class. Her school started  using online textbooks. 
-                        She was inicially  worried about using this new format, but   using text-to-speech software that highlights the text on the screen as it  reads it aloud, she realized that she  can focus on the content instead of struggling over every word.
-                        The text-to-speech software helps with other online   text; but, her experience with websites varies.
-                    </p>
-                    <p class="col2 text" id="secondParagraph">
-                        Some sites use graphics in a way that  helps her to focus on the content that she would like to read, while other sites   have distracting advertisements and moving content.
-                        She has problems with online content  when the navigation is  unclear,  and  prefers sites that have navigation cues including a navigation bar, search box,   bread-crumb trails, and a sitemap.   Her school is using an accessible library catalog online. Before it she had to go to the library to find books. Now she can search the catalog using her phone, tablet, or laptop. She struggles with spelling but the search   feature that suggests alternative spellings and correct words is helpful.
-                    </p>
-                    <img src="girl.svg" class="girl-img" alt="black and white illustration of a girl reading">
-                </section>
-            </a>
-        </section>  
-    </a>
-        
-</main>
-<script src="script.js"></script>
+        <!-- Persona Card -->
+        <section class="card" id="main-content">
+            <section class="header" id="persona-card-title">
+                <h1 class="title text">Middle school student with ADHD and dyslexia</h1>
+            </section>
+
+            <section class="text-container" id="persona-card-main-text">
+                <p class="col1 text">
+                    Preety is a middle school student with attention deficit hyperactivity disorder with dyslexia.
+                    She has difficulty reading, but she enjoys her literature class. Her school started using online textbooks. 
+                    She was initially worried about using this new format, but using text-to-speech software that highlights the text on the screen as it reads it aloud, she realized that she can focus on the content instead of struggling over every word.
+                    The text-to-speech software helps with other online text; but, her experience with websites varies.
+                </p>
+                <p class="col2 text">
+                    Some sites use graphics in a way that helps her to focus on the content that she would like to read, while other sites have distracting advertisements and moving content.
+                    She has problems with online content when the navigation is unclear, and prefers sites that have navigation cues including a navigation bar, search box, breadcrumb trails, and a sitemap. Her school is using an accessible library catalog online. Before it she had to go to the library to find books. Now she can search the catalog using her phone, tablet, or laptop. She struggles with spelling but the search feature that suggests alternative spellings and correct words is helpful.
+                </p>
+                <img src="girl.svg" class="girl-img" alt="Black and white illustration of a girl reading">
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>

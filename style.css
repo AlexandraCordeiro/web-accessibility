@@ -26,6 +26,35 @@ html {
     --radialButton: #FFB731;
 }
 
+.skip-link {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.skip-link:hover {
+    color: var(--radialButton);
+    
+}
+
+.skip-button {
+    padding: 0;
+    float: left;
+    border-radius: 0.5rem;
+    border: 0.1rem solid  var(--font-color);
+    padding: 0.3rem;
+}
+
+.skip-button:hover {
+    float: left;
+    border-radius: 0.5rem;
+    border: 0.1rem solid  var(--radialButton);
+    padding: 0.3rem;
+    box-shadow: 0 0 1rem #4c8bf580;
+    transform: scale(1.05);
+    transform: translateX(0.01rem);
+    margin-left: 1rem;
+}
+
 img {
     max-width: 30%;
     height: fit-content;
@@ -49,7 +78,10 @@ a {
 
 
 ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
+    justify-content: space-between;
     margin: 0;
     margin-left: 2%;
     margin-right: 2%;
@@ -118,9 +150,6 @@ h3 {
     text-align: left;
 }
 
-font-icon {
-    /* color: red; */
-}
 
 .buttons {
     float: right;
