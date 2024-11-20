@@ -2,7 +2,7 @@
 
 “I build awareness about the importance of accessibility by creating a proposal for an accessible persona card and sharing my creation with others”
 
-🔗 [Visit the website](https://alexandracordeiro.github.io/web-accessibility/)
+🔗 [Visit the website](https://alexandracordeiro.github.io/web-accessible-persona-card/)
 
 # Screenshot 
 <center>
